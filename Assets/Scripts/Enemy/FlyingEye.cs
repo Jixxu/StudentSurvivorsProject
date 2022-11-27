@@ -28,7 +28,7 @@ public class FlyingEye : MonoBehaviour
         Idling,
         Chasing,
         Attacking,
-        Dead
+        
     }
     [SerializeField] GameObject projectilePrefab;
     FlyingState currentState = FlyingState.Idling;
@@ -82,7 +82,7 @@ public class FlyingEye : MonoBehaviour
         spriteRenderer.color = Originalcolor;
 
     }
-    IEnumerator Damage(int damage)
+    internal IEnumerator Damage(int damage)
     {
         if (!isInvincible)
         {
@@ -95,8 +95,10 @@ public class FlyingEye : MonoBehaviour
             {
                 Instantiate(crystalPrefab, transform.position, Quaternion.identity);
                 Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                animator.SetTrigger("Dead");
+                yield return new WaitForSeconds(2f);
                 Destroy(gameObject);
-                yield return new WaitForSeconds(5f);
+                //yield return new WaitForSeconds(5f);
                 //SceneManager.LoadScene("Level2");
             }
             //enemy takes damage
@@ -120,7 +122,7 @@ public class FlyingEye : MonoBehaviour
             case FlyingState.Chasing:
                 if (Vector3.Distance(transform.position, player.transform.position) > 5f)
                 {
-                    animator.SetBool("IsWalking", true);
+                    animator.SetBool("isWalking", true);
                     if (player != null)
                     {
                         Vector3 destination = player.transform.position;
@@ -140,7 +142,7 @@ public class FlyingEye : MonoBehaviour
                 }
                 else
                 {
-                    animator.SetBool("IsWalking", false);
+                    animator.SetBool("isWalking", false);
                     currentState = FlyingState.Attacking;
                 }
                 break;
@@ -150,10 +152,7 @@ public class FlyingEye : MonoBehaviour
                 currentState = FlyingState.Idling;
                 spawnProjectile();
                 break;
-            case FlyingState.Dead:
-                animator.SetTrigger("Dead");
-                waitTime = 1f;
-                break;
+            
 
         }
     }
