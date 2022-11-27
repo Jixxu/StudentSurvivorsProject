@@ -1,71 +1,71 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2478545902503907212
+--- !u!1001 &8660410647476735259
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1901048227148230241, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: -2666971859297891254, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b2b2d99004a5b64a96fe92ba806b733, type: 2}
     - target: {fileID: 1901048227148230241, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.71875
+      value: 1.03125
       objectReference: {fileID: 0}
     - target: {fileID: 1901048227148230241, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.15625
+      value: 1.125
       objectReference: {fileID: 0}
     - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Size.x
-      value: 0.7200494
+      value: 1.0314068
       objectReference: {fileID: 0}
     - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Size.y
-      value: 1.1654418
-      objectReference: {fileID: 0}
-    - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      value: 1.1287241
       objectReference: {fileID: 0}
     - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Offset.x
-      value: 0.002912879
+      value: 0.0029100776
       objectReference: {fileID: 0}
     - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Offset.y
-      value: -0.0018703938
+      value: -0.00006484985
       objectReference: {fileID: 0}
     - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.71875
+      value: 1.03125
       objectReference: {fileID: 0}
     - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.15625
+      value: 1.125
       objectReference: {fileID: 0}
     - target: {fileID: 3255420850247276523, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -988310274, guid: 2dba8064eb534ed4eb9919623025166e, type: 3}
-    - target: {fileID: 4438093153272931538, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 741102857, guid: a4b53e0de7d5025458be0720944362d4, type: 3}
     - target: {fileID: 4438093153272931538, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.71875
+      value: 1.03125
       objectReference: {fileID: 0}
     - target: {fileID: 4438093153272931538, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.15625
+      value: 1.125
       objectReference: {fileID: 0}
     - target: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Name
-      value: Mushroom
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8422058233518423052, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_RootOrder
@@ -114,34 +114,4 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4438093153272931538, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
     - {fileID: 1901048227148230241, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
-    - {fileID: 6336017398264137848, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
---- !u!212 &1101134911258843239 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3255420850247276523, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
-  m_PrefabInstance: {fileID: 2478545902503907212}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7779368041383882569 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
-  m_PrefabInstance: {fileID: 2478545902503907212}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &-7673625722328535042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7779368041383882569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9b9546a61a43e04f95cfe32ba3f1f48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crystalPrefab: {fileID: 5973798920921161896, guid: 3e5f3898fce420d4da50fd38bcd8697b, type: 3}
-  coinPrefab: {fileID: 5216522861631752693, guid: 40d565dd9e4c7184882f8b636bce0bed, type: 3}
-  speed: 1
-  player: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
-  spriteRenderer: {fileID: 1101134911258843239}
-  enemyHp: 3
-  isTrackingPlayer: 1
