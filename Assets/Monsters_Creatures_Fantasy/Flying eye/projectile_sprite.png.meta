@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 837e2508670e2144aa8bcf84f0d8520a
+guid: b58227fa4f6693f43b50436ddc1a9277
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flight_0
+      name: projectile_sprite_5
       rect:
         serializedVersion: 2
-        x: 57
-        y: 58
-        width: 41
-        height: 31
+        x: 289
+        y: 3
+        width: 43
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40e645329f708849863713d585228ca
-      internalID: 74834368
+      spriteID: a84794c520e5d7b4f9822f249f9bf194
+      internalID: 1003502442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_1
+      name: projectile_sprite_6
       rect:
         serializedVersion: 2
-        x: 207
-        y: 58
-        width: 41
-        height: 32
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 624e3c752e2764646ac1467c6a5a6901
-      internalID: 1173640788
+      spriteID: b1356be0edd6a1c43a735146c339d11d
+      internalID: -831564950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_2
+      name: projectile_sprite_7
       rect:
         serializedVersion: 2
-        x: 357
-        y: 61
-        width: 40
-        height: 29
+        x: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eca6a3d9a4e87549bfc8d44888f9957
-      internalID: -890684651
+      spriteID: fd9ab541de5e3cf48ae74af277550c4f
+      internalID: 1380838465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_3
+      name: projectile_sprite_8
       rect:
         serializedVersion: 2
-        x: 508
-        y: 60
-        width: 39
-        height: 25
+        x: 112
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7177d7741d670441a5bae2e15a113f0
-      internalID: -899848455
+      spriteID: 93cb075a07d918f4781a31d049b691b0
+      internalID: 50355594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_4
+      name: projectile_sprite_9
       rect:
         serializedVersion: 2
-        x: 657
-        y: 60
-        width: 40
-        height: 24
+        x: 157
+        y: 16
+        width: 21
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d44eba1eedc47840982d12e1c53758c
-      internalID: 1141812188
+      spriteID: 7b2881e2781753f4092569d744cf541e
+      internalID: -559871848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_5
+      name: projectile_sprite_19
       rect:
         serializedVersion: 2
-        x: 806
-        y: 59
-        width: 42
-        height: 24
+        x: 200
+        y: 11
+        width: 30
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a0be44a1158fce4f8e54e604947b996
-      internalID: 967883883
+      spriteID: b0f7164f223f007418f5a13ef64abe49
+      internalID: 1634014919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_6
+      name: projectile_sprite_0
       rect:
         serializedVersion: 2
-        x: 958
-        y: 58
-        width: 40
-        height: 24
+        x: 244
+        y: 7
+        width: 37
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21d185c0425afcb4cbfe1695da220781
-      internalID: -453651729
+      spriteID: a32d88c92e8c47c4ea7b5dd1c45f191d
+      internalID: 164636202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_7
+      name: projectile_sprite_1
       rect:
         serializedVersion: 2
-        x: 1108
-        y: 57
-        width: 40
-        height: 25
+        x: 337
+        y: 3
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,8 +277,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfbe17e489cf5064eb6505e7006a893f
-      internalID: 1677268658
+      spriteID: 28988c6da88261e458366a8627aca11f
+      internalID: 47554211
       vertices: []
       indices: 
       edges: []
@@ -294,14 +294,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Flight_7: 1677268658
-      Flight_3: -899848455
-      Flight_5: 967883883
-      Flight_0: 74834368
-      Flight_4: 1141812188
-      Flight_1: 1173640788
-      Flight_6: -453651729
-      Flight_2: -890684651
+      projectile_sprite_23: 1826180370
+      projectile_sprite_3: 344463122
+      projectile_sprite_17: -1809704567
+      projectile_sprite_15: 1426619623
+      projectile_sprite_16: 1396755771
+      projectile_sprite_12: 1130199176
+      projectile_sprite_19: 1634014919
+      projectile_sprite_1: 47554211
+      projectile_sprite_9: -559871848
+      projectile_sprite_10: -2112774530
+      projectile_sprite_20: 2128822931
+      projectile_sprite_4: 1784215998
+      projectile_sprite_11: 495321613
+      projectile_sprite_0: 164636202
+      projectile_sprite_6: -831564950
+      projectile_sprite_18: 1019309630
+      projectile_sprite_2: -62182929
+      projectile_sprite_8: 50355594
+      projectile_sprite_7: 1380838465
+      projectile_sprite_5: 1003502442
+      projectile_sprite_13: 585016742
+      projectile_sprite_22: -902734671
+      projectile_sprite_14: 432868066
+      projectile_sprite_21: -813362246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

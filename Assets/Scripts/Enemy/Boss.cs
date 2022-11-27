@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class Boss : MonoBehaviour
         spriteRenderer.color = Originalcolor;
         
     }
-    internal void Damage(int damage)
+    internal IEnumerator Damage(int damage)
     {
         if (!isInvincible)
         {
@@ -80,6 +81,8 @@ public class Boss : MonoBehaviour
                 Instantiate(crystalPrefab, transform.position, Quaternion.identity);
                 Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
+                yield return new WaitForSeconds(5f);
+                SceneManager.LoadScene("Level2");
             }
             //enemy takes damage
             StartCoroutine(DamageCoroutine());

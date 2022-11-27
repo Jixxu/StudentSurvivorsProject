@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 837e2508670e2144aa8bcf84f0d8520a
+guid: f63d934d20715584484ec050f7c7c00a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flight_0
+      name: Attack3_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 58
-        width: 41
-        height: 31
+        x: 68
+        y: 59
+        width: 25
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,19 +130,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40e645329f708849863713d585228ca
-      internalID: 74834368
+      spriteID: f93ae8d5dc74a264b87ec8e53b3fa55d
+      internalID: -1255851814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_1
+      name: Attack3_1
       rect:
         serializedVersion: 2
-        x: 207
+        x: 223
+        y: 64
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab722658b0177d64abcbfee58e14c1c1
+      internalID: -1457840901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 64
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784effe0b7f6d0b49988562c00660dc1
+      internalID: 2055582053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3_3
+      rect:
+        serializedVersion: 2
+        x: 512
         y: 58
-        width: 41
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c010cd7aca8420f458c4cb4af8718384
+      internalID: -1213745282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack3_4
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 58
+        width: 35
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -151,83 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 624e3c752e2764646ac1467c6a5a6901
-      internalID: 1173640788
+      spriteID: 38fc66d9fdbba2e48b036850b2235aee
+      internalID: 1200442507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flight_2
+      name: Attack3_5
       rect:
         serializedVersion: 2
-        x: 357
-        y: 61
-        width: 40
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5eca6a3d9a4e87549bfc8d44888f9957
-      internalID: -890684651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flight_3
-      rect:
-        serializedVersion: 2
-        x: 508
-        y: 60
-        width: 39
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7177d7741d670441a5bae2e15a113f0
-      internalID: -899848455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flight_4
-      rect:
-        serializedVersion: 2
-        x: 657
-        y: 60
-        width: 40
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d44eba1eedc47840982d12e1c53758c
-      internalID: 1141812188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flight_5
-      rect:
-        serializedVersion: 2
-        x: 806
+        x: 812
         y: 59
-        width: 42
-        height: 24
+        width: 35
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,50 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a0be44a1158fce4f8e54e604947b996
-      internalID: 967883883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flight_6
-      rect:
-        serializedVersion: 2
-        x: 958
-        y: 58
-        width: 40
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21d185c0425afcb4cbfe1695da220781
-      internalID: -453651729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Flight_7
-      rect:
-        serializedVersion: 2
-        x: 1108
-        y: 57
-        width: 40
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfbe17e489cf5064eb6505e7006a893f
-      internalID: 1677268658
+      spriteID: 99427b12af59c61409cf2a6a14cc8b41
+      internalID: 95191174
       vertices: []
       indices: 
       edges: []
@@ -294,14 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Flight_7: 1677268658
-      Flight_3: -899848455
-      Flight_5: 967883883
-      Flight_0: 74834368
-      Flight_4: 1141812188
-      Flight_1: 1173640788
-      Flight_6: -453651729
-      Flight_2: -890684651
+      Attack3_4: 1200442507
+      Attack3_5: 95191174
+      Attack3_1: -1457840901
+      Attack3_0: -1255851814
+      Attack3_3: -1213745282
+      Attack3_2: 2055582053
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
