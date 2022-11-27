@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Goblin;
     [SerializeField] GameObject Skeleton;
     [SerializeField] GameObject Mushroom;
+    [SerializeField] GameObject FlyingEye;
     // Iteams
     [SerializeField] GameObject smallhp;
     [SerializeField] GameObject bighp;
@@ -28,6 +31,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Player1;
     [SerializeField] GameObject Player2;
     [SerializeField] GameObject Player3;
+
+    
+        Scene currentScene = SceneManager.GetActiveScene();
 
     private void Awake()
     {
@@ -47,9 +53,18 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        string sceneName = currentScene.name;
+
         StartCoroutine(SpawnCoroutineItems());
         StartCoroutine(SpawnCoroutineEnemy());
-        StartCoroutine(Spawnboss(Boss,1));
+        if (sceneName == "Game")
+        {
+            StartCoroutine(Spawnboss(Boss, 1));
+        }
+        else if(sceneName == "level2")
+        {
+            StartCoroutine(SpawnFlyingEye(FlyingEye, 1));
+        }
 
 
     }
@@ -81,8 +96,6 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnCoroutineEnemy()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-
         string sceneName = currentScene.name;
 
         if (sceneName == "Game")
@@ -170,6 +183,25 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator Spawnboss(GameObject bossEnemy, int numberOfBosses, bool isTracking = true)
     {
+     
+            while (true)
+            {
+                for (int i = 0; i < numberOfBosses; i++)
+                {
+                    yield return new WaitForSeconds(300f);
+                    Vector3 bossSpawn = Random.insideUnitCircle.normalized * 10;
+                    bossSpawn += player.transform.position;
+                    GameObject enemyobject = Instantiate(bossEnemy, bossSpawn, Quaternion.identity);
+                    Enemy enemy = enemyobject.GetComponent<Enemy>();
+                    enemy.isTrackingPlayer = isTracking;
+
+                }
+            }
+       
+    }
+    IEnumerator SpawnFlyingEye(GameObject bossEnemy, int numberOfBosses, bool isTracking = true)
+    {
+
         while (true)
         {
             for (int i = 0; i < numberOfBosses; i++)
@@ -183,6 +215,7 @@ public class GameManager : MonoBehaviour
 
             }
         }
+
     }
 
     private IEnumerator SpawnCoroutineItems()
