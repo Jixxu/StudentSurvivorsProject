@@ -62,6 +62,7 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(crystalPrefab, transform.position, Quaternion.identity);
                 Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                
                 Destroy(gameObject);
             }
             //enemy takes damage
