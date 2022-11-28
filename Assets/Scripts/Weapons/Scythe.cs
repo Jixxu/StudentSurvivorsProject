@@ -23,5 +23,11 @@ public class Scythe : BaseWeapons
             boss.Damage(1);
             gameObject.SetActive(false);
         }
+        FlyingEye flyingEye = collision.GetComponent<FlyingEye>();
+        if (flyingEye != null)
+        {
+            flyingEye.Damage(1);
+            gameObject.SetActive(false);
+        }
     }
 }

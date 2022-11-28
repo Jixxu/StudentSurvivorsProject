@@ -163,6 +163,7 @@ MonoBehaviour:
   Goblin: {fileID: 3584790265448377822, guid: ffca1ab9c995d7345baa35fc3aa0077b, type: 3}
   Skeleton: {fileID: 6211447523692515766, guid: 8d8467f27b90da540971d1e7fb0131fe, type: 3}
   Mushroom: {fileID: 7779368041383882569, guid: 05925d6a871b7734595acba68407a229, type: 3}
+  FlyingEye: {fileID: 1067500716875432453, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
   smallhp: {fileID: 425185245563539624, guid: ef045e9fab3f9994084d6b12e4434f80, type: 3}
   bighp: {fileID: 80638141824239991, guid: 753f13851e23c84408d753b542d5a9d0, type: 3}
   SuperCrystal: {fileID: 8453070491778519705, guid: b2fd7f32b17556d4c9978c8c8576c09e, type: 3}
@@ -521,6 +522,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -721561418232790363, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
+      propertyPath: enemyHp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1067500716875432453, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
       propertyPath: m_Name
       value: Flying Eye
@@ -572,6 +577,10 @@ PrefabInstance:
     - target: {fileID: 3720502371543523020, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668887331125785899, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
@@ -13762,63 +13771,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1718888852
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4681803545653895958, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_Name
-      value: Giant
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.6029875
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9045616784221224927, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
 --- !u!1 &1728890620
 GameObject:
   m_ObjectHideFlags: 0

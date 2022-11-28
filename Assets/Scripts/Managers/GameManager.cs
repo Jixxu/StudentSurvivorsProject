@@ -33,7 +33,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Player3;
 
     
-        Scene currentScene = SceneManager.GetActiveScene();
 
     private void Awake()
     {
@@ -53,6 +52,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
         StartCoroutine(SpawnCoroutineItems());
@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator SpawnCoroutineEnemy()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
         if (sceneName == "Game")

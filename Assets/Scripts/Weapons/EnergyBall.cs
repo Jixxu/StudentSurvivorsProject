@@ -49,6 +49,11 @@ public class EnergyBall : BaseWeapons
         {
             boss.Damage(2);
         }
+        FlyingEye flyingEye = collision.GetComponent<FlyingEye>();
+        if(flyingEye != null)
+        {
+            flyingEye.Damage(2);
+        }
     }
 
 
