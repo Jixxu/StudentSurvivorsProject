@@ -18,10 +18,11 @@ public class SaveData
     public int merman;
     public int giant;
     public int skeleton;
-    public int vamipire;
+    public int vampire;
     public int zombie;
     public int runner;
     public int mushroom;
+    public int goblin;
     public int Boss;
     public int flyingEye;
 }

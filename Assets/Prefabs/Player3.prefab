@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48754fc5c66bbd54189498d46c1f5af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 6284956383250212784}
   levelUpMenu: {fileID: 0}
   weapons: []
   goldDisplay: {fileID: 0}

@@ -95,10 +95,12 @@ public class TitleManager : MonoBehaviour
     }
     public void OnRetryButtonClick()
     {
+        StatReset();
         SceneManager.LoadScene("Game");
     }
     public void OnTitleButtonClick()
     {
+        StatReset();
         SceneManager.LoadScene("Title");
     }
 
@@ -168,6 +170,19 @@ public class TitleManager : MonoBehaviour
         SceneManager.LoadScene("Title");
     }
 
-    
+    public void StatReset()
+    {
+        TitleManager.saveData.merman = 0;
+        TitleManager.saveData.runner = 0;
+        TitleManager.saveData.zombie = 0;
+        TitleManager.saveData.vampire = 0;
+        TitleManager.saveData.giant = 0;
+        TitleManager.saveData.mushroom = 0;
+        TitleManager.saveData.goblin = 0;
+        TitleManager.saveData.skeleton = 0;
+        TitleManager.saveData.flyingEye = 0;
+        TitleManager.saveData.Boss = 0;
+        TitleManager.saveData.exp = 0;
+    }
 
 }

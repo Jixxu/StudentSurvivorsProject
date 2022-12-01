@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2666971859297891254, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c7a7c8e7a2447ea4a942a56f92da0798, type: 2}
     - target: {fileID: 1973477176450498905, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Size.x
       value: 4.134976
@@ -42,6 +46,10 @@ PrefabInstance:
     - target: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_Name
       value: Flying Eye
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_TagString
+      value: FlyingEye
       objectReference: {fileID: 0}
     - target: {fileID: 8422058233518423052, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_RootOrder
@@ -115,9 +123,8 @@ MonoBehaviour:
   player: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
   spriteRenderer: {fileID: 7668887331125785899}
   enemyHp: 500
-  isflyingeye: 0
   isTrackingPlayer: 1
-  projectilePrefab: {fileID: 5184764313807594574, guid: 0093abd3326faf246ba7b683bd85d254, type: 3}
+  ballPrefab: {fileID: 5184764313807594574, guid: 0093abd3326faf246ba7b683bd85d254, type: 3}
 --- !u!212 &7668887331125785899 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3255420850247276523, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}

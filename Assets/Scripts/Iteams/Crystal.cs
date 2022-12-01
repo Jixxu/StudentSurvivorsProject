@@ -10,8 +10,8 @@ public class Crystal : MonoBehaviour
         if (player)
         {
             player.AddExp();
-            TitleManager.saveData.exp++;
             Destroy(gameObject);
+            TitleManager.saveData.exp++;
         }
     }
 }

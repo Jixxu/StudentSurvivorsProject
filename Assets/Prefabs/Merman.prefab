@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1114002866574298681}
   m_Layer: 0
   m_Name: Merman
-  m_TagString: Enemy
+  m_TagString: Merman
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6217677216795817113}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 596af364829a238428019bfcfd1fe438, type: 2}
   m_CullingMode: 0

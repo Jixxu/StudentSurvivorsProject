@@ -8,6 +8,16 @@ TagManager:
   - Player2
   - Player3
   - Enemy
+  - Merman
+  - Runner
+  - Zombie
+  - Vampire
+  - Giant
+  - Mushroom
+  - Goblin
+  - Skeleton
+  - FlyingEye
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,7 @@ public class FlyingEye : Enemy
         Chasing,
         Attacking
     }
-    [SerializeField] GameObject knifePrefab;
+    [SerializeField] GameObject ballPrefab;
     FlyingState currentState = FlyingState.Idling;
     Animator animator;
     float waitTime = 2f;
@@ -35,38 +35,36 @@ public class FlyingEye : Enemy
             case FlyingState.Chasing:
                 if (Vector3.Distance(transform.position, player.transform.position) > 5f)
                 {
-                    animator.SetBool("IsWalking", true);
+                    animator.SetBool("isWalking", true);
                     base.Update();
                 }
                 else
                 {
-                    animator.SetBool("IsWalking", false);
+                    animator.SetBool("isWalking", false);
                     currentState = FlyingState.Attacking;
                 }
                 break;
             case FlyingState.Attacking:
                 animator.SetTrigger("Attack");
-                waitTime = 5f;
+                waitTime = 1f;
                 currentState = FlyingState.Idling;
-                SpawnKnife();
+                SpawnBall();
                 break;
         }
     }
 
-    
 
-    IEnumerator SpawnKnife()
-    {
-        yield return new WaitForSeconds(1f);
-        double valueX = player.transform.position.x - transform.position.x;
-        double valueY = player.transform.position.y - transform.position.y;
-        double tan = valueY / valueX;
-        double angle = ConvertRadians(Math.Atan2(valueY, valueX));
 
-        Instantiate(knifePrefab, transform.position, Quaternion.Euler(0, 0, (float)angle));
-    }
-    public static double ConvertRadians(double radians)
+    internal void SpawnBall()
     {
-        return Mathf.Rad2Deg * radians;
+        var flyingEye = transform.position;
+
+        var targetPos = player.transform.position;
+
+        Vector3 points = (targetPos - flyingEye);
+
+        float angle = MathF.Atan2(points.y, points.x) * Mathf.Rad2Deg;
+
+        Instantiate(ballPrefab, transform.position, Quaternion.Euler(0, 0, angle));
     }
 }

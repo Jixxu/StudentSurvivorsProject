@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_TagString
+      value: Skeleton
+      objectReference: {fileID: 0}
     - target: {fileID: 8422058233518423052, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_RootOrder
       value: 0

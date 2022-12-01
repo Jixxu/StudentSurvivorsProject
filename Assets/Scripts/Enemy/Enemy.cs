@@ -61,9 +61,9 @@ public class Enemy : MonoBehaviour
             if (enemyHp <= 0)
             {
                 Instantiate(crystalPrefab, transform.position, Quaternion.identity);
-                Instantiate(coinPrefab, transform.position, Quaternion.identity);
-                
+                Instantiate(coinPrefab, transform.position, Quaternion.identity);               
                 Destroy(gameObject);
+                enemiesKilled();
             }
             //enemy takes damage
             StartCoroutine(InvincibilityCoroutine());
@@ -89,5 +89,50 @@ public class Enemy : MonoBehaviour
 
             transform.localScale = new Vector3(direction.x > 0 ? -1 : 1, 1, 1);
         }
+    }
+    public void enemiesKilled()
+    {
+        //TitleManager.saveData.totalEnemies++;
+        if (gameObject.tag == "Merman")
+        {
+            TitleManager.saveData.merman++;
+        }
+        else if (gameObject.tag == "Runner")
+        {
+            TitleManager.saveData.runner++;
+        }
+        else if (gameObject.tag == "Zombie")
+        {
+            TitleManager.saveData.zombie++;
+        }
+        else if (gameObject.tag == "Vampire")
+        {
+            TitleManager.saveData.vampire++;
+        }
+        else if (gameObject.tag == "Giant")
+        {
+            TitleManager.saveData.giant++;
+        }
+        else if (gameObject.tag == "Mushroom")
+        {
+            TitleManager.saveData.mushroom++;
+        }
+        else if (gameObject.tag == "Goblin")
+        {
+            TitleManager.saveData.goblin++;
+        }
+        else if (gameObject.tag == "Skeleton")
+        {
+            TitleManager.saveData.skeleton++;
+        }
+        else if (gameObject.tag == "FlyingEye")
+        {
+            TitleManager.saveData.flyingEye++;
+        }
+        else if (gameObject.tag == "Boss")
+        {
+            TitleManager.saveData.Boss++;
+        }
+
     }
 }
