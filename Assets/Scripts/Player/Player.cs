@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
 
             Time.timeScale = 0;
             levelUpMenu.SetActive(true);
-            playercamera.DepthOfField.focalLength.Override(300);
+            //playercamera.DepthOfField.focalLength.Override(300);
            
             
         }
@@ -127,7 +127,7 @@ public class Player : MonoBehaviour
     {
         playercamera.colorAdjustments.saturation.Override(-100);
         Time.timeScale = 0;
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(0);
         Destroy(gameObject);
         SceneManager.LoadScene("Death");
     }

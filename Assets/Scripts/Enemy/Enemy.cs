@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 
 
     Color Originalcolor;
-    GameObject Enemytype;
+    
 
     protected virtual void Start()
     {

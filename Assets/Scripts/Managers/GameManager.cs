@@ -105,7 +105,6 @@ public class GameManager : MonoBehaviour
             while (true)
             {
                 yield return new WaitForSeconds(1f);
-                SpawnEnemies(Giant, 2);
                 SpawnEnemies(merman, 10);
                 SpawnEnemies(zombie, 10);
                 yield return new WaitForSeconds(10f);

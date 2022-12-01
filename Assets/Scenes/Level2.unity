@@ -162,7 +162,7 @@ MonoBehaviour:
   Boss: {fileID: 5096017340456727717, guid: 3e056ae2e35b45442a2430fad2ec28d8, type: 3}
   Goblin: {fileID: 3584790265448377822, guid: ffca1ab9c995d7345baa35fc3aa0077b, type: 3}
   Skeleton: {fileID: 6211447523692515766, guid: 8d8467f27b90da540971d1e7fb0131fe, type: 3}
-  Mushroom: {fileID: 7779368041383882569, guid: 05925d6a871b7734595acba68407a229, type: 3}
+  Mushroom: {fileID: 6217677216795817113, guid: df91280fc392fc6429b3e67b4ce3196d, type: 3}
   FlyingEye: {fileID: 1067500716875432453, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
   smallhp: {fileID: 425185245563539624, guid: ef045e9fab3f9994084d6b12e4434f80, type: 3}
   bighp: {fileID: 80638141824239991, guid: 753f13851e23c84408d753b542d5a9d0, type: 3}

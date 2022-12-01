@@ -80,6 +80,7 @@ public class Boss : MonoBehaviour
             {
                 Instantiate(crystalPrefab, transform.position, Quaternion.identity);
                 Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                TitleManager.saveData.Boss++;
                 Destroy(gameObject);
                 yield return new WaitForSeconds(5f);
                 SceneManager.LoadScene("Level2");

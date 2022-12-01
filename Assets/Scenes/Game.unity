@@ -8919,12 +8919,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 108077751}
   player: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
-  merman: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
-  runner: {fileID: 1463503137480796484, guid: 0fc3b37ef3343a844a0cea17de229410, type: 3}
-  zombie: {fileID: 4681803545653895958, guid: 1a72867c26b174a4481eb618b1ddb86b, type: 3}
+  merman: {fileID: 6217677216795817113, guid: df91280fc392fc6429b3e67b4ce3196d, type: 3}
+  runner: {fileID: 6842550369678829751, guid: 753b3d588a064e7469fee3bd00961a02, type: 3}
+  zombie: {fileID: 9029878337994757508, guid: ab2f60def49f8704482d25d6bbdafc7c, type: 3}
   vampire: {fileID: 4376355291359186362, guid: 53ce3ff6e042de444af42a8cecf95213, type: 3}
+  Giant: {fileID: 5354528972128443150, guid: 358080113f2e54841bd408f4deaf72cd, type: 3}
   Boss: {fileID: 5096017340456727717, guid: 3e056ae2e35b45442a2430fad2ec28d8, type: 3}
-  Giant: {fileID: 4681803545653895958, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
+  Goblin: {fileID: 0}
+  Skeleton: {fileID: 0}
+  Mushroom: {fileID: 0}
+  FlyingEye: {fileID: 0}
   smallhp: {fileID: 425185245563539624, guid: ef045e9fab3f9994084d6b12e4434f80, type: 3}
   bighp: {fileID: 80638141824239991, guid: 753f13851e23c84408d753b542d5a9d0, type: 3}
   SuperCrystal: {fileID: 8453070491778519705, guid: b2fd7f32b17556d4c9978c8c8576c09e, type: 3}
@@ -40876,7 +40880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -379.2, y: 121.29}
+  m_AnchoredPosition: {x: -379.7, y: 91.4}
   m_SizeDelta: {x: 62.7026, y: 56.6543}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855869602
