@@ -12929,7 +12929,7 @@ GameObject:
   - component: {fileID: 1625797529}
   - component: {fileID: 1625797528}
   m_Layer: 0
-  m_Name: ScytheObjectPool
+  m_Name: ObjectPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12948,9 +12948,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scythePrefab: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
-  bigHpPrefab: {fileID: 80638141824239991, guid: 753f13851e23c84408d753b542d5a9d0, type: 3}
-  smallHpPrefab: {fileID: 425185245563539624, guid: ef045e9fab3f9994084d6b12e4434f80, type: 3}
-  superCrystalPrefab: {fileID: 8453070491778519705, guid: b2fd7f32b17556d4c9978c8c8576c09e, type: 3}
 --- !u!4 &1625797529
 Transform:
   m_ObjectHideFlags: 0

@@ -60,54 +60,30 @@ public class Katana : BaseWeapons
 
 
         }
-        Boss boss = collision.gameObject.GetComponent<Boss>();
+       
+        //FlyingEye flyingEye = collision.gameObject.GetComponent<FlyingEye>();
 
-        if (boss != null)
-        {
-            if (TitleManager.saveData.CritDamage >= 1)
-            {
-                int randNum = Random.Range(0, 100);
+        //if (flyingEye != null)
+        //{
+        //    if (TitleManager.saveData.CritDamage >= 1)
+        //    {
+        //        int randNum = Random.Range(0, 100);
 
-                if (randNum >= 90)
-                {
-                    boss.Damage(3);
+        //        if (randNum >= 90)
+        //        {
+        //            flyingEye.Damage(3);
 
-                }
-                else
-                {
-                    boss.Damage(1);
-                }
-            }
-            else
-            {
-                boss.Damage(1);
-            }
-
-
-        }
-        FlyingEye flyingEye = collision.gameObject.GetComponent<FlyingEye>();
-
-        if (flyingEye != null)
-        {
-            if (TitleManager.saveData.CritDamage >= 1)
-            {
-                int randNum = Random.Range(0, 100);
-
-                if (randNum >= 90)
-                {
-                    flyingEye.Damage(3);
-
-                }
-                else
-                {
-                    flyingEye.Damage(1);
-                }
-            }
-            else
-            {
-                flyingEye.Damage(1);
-            }
-        }
+        //        }
+        //        else
+        //        {
+        //            flyingEye.Damage(1);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        flyingEye.Damage(1);
+        //    }
+        //}
         
 
     }

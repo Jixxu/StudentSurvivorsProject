@@ -8932,6 +8932,7 @@ MonoBehaviour:
   smallhp: {fileID: 425185245563539624, guid: ef045e9fab3f9994084d6b12e4434f80, type: 3}
   bighp: {fileID: 80638141824239991, guid: 753f13851e23c84408d753b542d5a9d0, type: 3}
   SuperCrystal: {fileID: 8453070491778519705, guid: b2fd7f32b17556d4c9978c8c8576c09e, type: 3}
+  pool: {fileID: 828910324}
   Player1: {fileID: 110439541}
   Player2: {fileID: 1893276775}
   Player3: {fileID: 337070098}
@@ -22111,7 +22112,7 @@ GameObject:
   - component: {fileID: 828910325}
   - component: {fileID: 828910324}
   m_Layer: 0
-  m_Name: ScytheObjectPool
+  m_Name: ObjectPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

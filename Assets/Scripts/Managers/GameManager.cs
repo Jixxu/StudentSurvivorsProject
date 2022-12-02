@@ -224,7 +224,7 @@ public class GameManager : MonoBehaviour
         {
             Vector3 randomPosition = Random.insideUnitCircle.normalized * 5;
             yield return new WaitForSeconds(10f);
-            Instantiate(smallhp, randomPosition, Quaternion.identity);
+            Instantiate(smallhp, randomPosition, Quaternion.identity);       
             yield return new WaitForSeconds(10f);
             Instantiate(bighp, randomPosition, Quaternion.identity);
             yield return new WaitForSeconds(1f);
