@@ -159,7 +159,7 @@ MonoBehaviour:
   zombie: {fileID: 4681803545653895958, guid: 1a72867c26b174a4481eb618b1ddb86b, type: 3}
   vampire: {fileID: 4376355291359186362, guid: 53ce3ff6e042de444af42a8cecf95213, type: 3}
   Giant: {fileID: 4681803545653895958, guid: 152d4cebd1bb0004dbb60396dbb683db, type: 3}
-  Boss: {fileID: 5096017340456727717, guid: 3e056ae2e35b45442a2430fad2ec28d8, type: 3}
+  Boss: {fileID: 0}
   Goblin: {fileID: 3584790265448377822, guid: ffca1ab9c995d7345baa35fc3aa0077b, type: 3}
   Skeleton: {fileID: 6211447523692515766, guid: 8d8467f27b90da540971d1e7fb0131fe, type: 3}
   Mushroom: {fileID: 4226724651462126229, guid: 09562ab5b0debdd47be5e81f2ef9743b, type: 3}
@@ -12950,6 +12950,7 @@ MonoBehaviour:
   scythePrefab: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
   bigHpPrefab: {fileID: 80638141824239991, guid: 753f13851e23c84408d753b542d5a9d0, type: 3}
   smallHpPrefab: {fileID: 425185245563539624, guid: ef045e9fab3f9994084d6b12e4434f80, type: 3}
+  superCrystalPrefab: {fileID: 8453070491778519705, guid: b2fd7f32b17556d4c9978c8c8576c09e, type: 3}
 --- !u!4 &1625797529
 Transform:
   m_ObjectHideFlags: 0
