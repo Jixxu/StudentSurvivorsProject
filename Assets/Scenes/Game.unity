@@ -22129,7 +22129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0319aa0c48ace0441a75f50659245ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
+  scythePrefab: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
+  bigHpPrefab: {fileID: 80638141824239991, guid: 753f13851e23c84408d753b542d5a9d0, type: 3}
+  smallHpPrefab: {fileID: 425185245563539624, guid: ef045e9fab3f9994084d6b12e4434f80, type: 3}
 --- !u!4 &828910325
 Transform:
   m_ObjectHideFlags: 0
