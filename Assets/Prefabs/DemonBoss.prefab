@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8107550330188236559}
   - component: {fileID: 5641752215431969906}
   - component: {fileID: 3539264302206863900}
-  - component: {fileID: 6439103793946830387}
+  - component: {fileID: 3367389492534974576}
   m_Layer: 0
   m_Name: DemonBoss
   m_TagString: FlyingEye
@@ -145,7 +145,7 @@ Animator:
   m_GameObject: {fileID: 2481680488219829907}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 858078ca6ff5b8243b8b22d7a313f28f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -155,7 +155,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6439103793946830387
+--- !u!114 &3367389492534974576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2481680488219829907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1566fc8f73181654286e033efc2d593b, type: 3}
+  m_Script: {fileID: 11500000, guid: 574a07c58dd07084b994aa3ba76c3ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   crystalPrefab: {fileID: 5973798920921161896, guid: 3e5f3898fce420d4da50fd38bcd8697b, type: 3}
@@ -172,6 +172,5 @@ MonoBehaviour:
   speed: 1
   player: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
   spriteRenderer: {fileID: 5101849517611241917}
-  enemyHp: 500
+  enemyHp: 3
   isTrackingPlayer: 1
-  ballPrefab: {fileID: 5184764313807594574, guid: 0093abd3326faf246ba7b683bd85d254, type: 3}
