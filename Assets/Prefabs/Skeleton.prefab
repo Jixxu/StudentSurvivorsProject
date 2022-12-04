@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.59375
       objectReference: {fileID: 0}
+    - target: {fileID: 2714398059311970852, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3255420850247276523, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -114,4 +118,35 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4438093153272931538, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
     - {fileID: 1901048227148230241, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+    - {fileID: 6336017398264137848, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+--- !u!212 &3643030321555252888 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3255420850247276523, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+  m_PrefabInstance: {fileID: 2279719460978078067}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6211447523692515766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5300822907814453445, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+  m_PrefabInstance: {fileID: 2279719460978078067}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4838161727460707763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6211447523692515766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8326f24102f3bc499eb817af4d0f9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crystalPrefab: {fileID: 5973798920921161896, guid: 3e5f3898fce420d4da50fd38bcd8697b, type: 3}
+  coinPrefab: {fileID: 5216522861631752693, guid: 40d565dd9e4c7184882f8b636bce0bed, type: 3}
+  speed: 1
+  player: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
+  spriteRenderer: {fileID: 3643030321555252888}
+  enemyHp: 3
+  demon: {fileID: 0}
+  isTrackingPlayer: 1

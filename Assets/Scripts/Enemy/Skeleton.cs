@@ -31,20 +31,17 @@ public class Skeleton : Enemy
                 }
                 break;
             case SkeletonState.Chasing:
-                if (Vector3.Distance(transform.position, player.transform.position) > 1f)
+                base.Update();
+                float distance = Vector3.Distance(transform.position, player.transform.position);
+                animator.SetBool("isWalking", true);
+                if (distance < 1f)
                 {
-                    animator.SetBool("isWalking", true);
-                    base.Update();
-                }
-                else
-                {
-                    animator.SetBool("isWalking", false);
                     currentState = SkeletonState.Attacking;
                 }
-                break;
+                break; 
             case SkeletonState.Attacking:
                 animator.SetTrigger("Attack");
-                waitTime = 5f;
+                waitTime = 1f;
                 currentState = SkeletonState.Idling;
                 break;
         }

@@ -24,5 +24,5 @@ public class SaveData
     public int mushroom;
     public int goblin;
     public int Boss;
-    public int flyingEye;
+    public int flyingEye;  
 }

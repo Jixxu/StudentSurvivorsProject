@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,20 +32,18 @@ public class Demon : Enemy
                 }
                 break;
             case DemonState.Chasing:
-                if (Vector3.Distance(transform.position, player.transform.position) > 1f)
+                base.Update();
+                float distance = Vector3.Distance(transform.position, player.transform.position);
+                animator.SetBool("isWalking", true);
+                if (distance < 1f)
                 {
-                    animator.SetBool("isWalking", true);
-                    base.Update();
-                }
-                else
-                {
-                    animator.SetBool("isWalking", false);
                     currentState = DemonState.Attacking;
                 }
                 break;
+                
             case DemonState.Attacking:
                 animator.SetTrigger("Attack");
-                waitTime = 5f;
+                waitTime = 1f;
                 currentState = DemonState.Idling;
                 break;
         }

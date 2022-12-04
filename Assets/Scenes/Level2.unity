@@ -1364,7 +1364,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -447010811, guid: 99a89cb25608bbf40b7ef20b78cd3437, type: 3}
-  m_Color: {r: 0.044874907, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.09941673, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -13478,7 +13478,7 @@ PrefabInstance:
       objectReference: {fileID: 1706634578}
     - target: {fileID: 7451634807008844272, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7451634807008844272, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13532,6 +13532,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5a68bc869380ef34baa63966d77cd4be, type: 2}
+    - target: {fileID: 9206403285473355754, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
 --- !u!4 &1713442122 stripped
@@ -14220,9 +14224,13 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2832864635476772618, guid: 64ae21c6274275542be07673ccc55704, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3894718893092603752, guid: 64ae21c6274275542be07673ccc55704, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3894718893092603752, guid: 64ae21c6274275542be07673ccc55704, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14334,6 +14342,10 @@ PrefabInstance:
     - target: {fileID: 3720502371543523020, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668887331125785899, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c58f3b22ac43474393ffa8969768cfd, type: 3}
@@ -24559,6 +24571,10 @@ PrefabInstance:
       propertyPath: weapons.Array.data[4]
       value: 
       objectReference: {fileID: 808761563}
+    - target: {fileID: 383229409637684388, guid: ce4710cd84afcc847816499f924c25f6, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 481366115894192916, guid: ce4710cd84afcc847816499f924c25f6, type: 3}
       propertyPath: m_Name
       value: Player3
@@ -24901,6 +24917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1713442123}
+  playerCamera: {fileID: 0}
   healthIncreaseBTN: {fileID: 0}
   CritIncreaseBTN: {fileID: 0}
   ps: {fileID: 1419745732}

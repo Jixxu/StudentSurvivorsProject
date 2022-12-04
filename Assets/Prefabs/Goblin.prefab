@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.125
       objectReference: {fileID: 0}
+    - target: {fileID: 2714398059311970852, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3255420850247276523, guid: 737b6a6b02298a240b122ef16fe6f85a, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -147,6 +151,7 @@ MonoBehaviour:
   player: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
   spriteRenderer: {fileID: 6125565760296131312}
   enemyHp: 3
+  demon: {fileID: 0}
   isTrackingPlayer: 1
 --- !u!212 &6125565760296131312 stripped
 SpriteRenderer:

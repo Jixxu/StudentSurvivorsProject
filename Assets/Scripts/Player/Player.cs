@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(InvincibilityCoroutine());
             isInvincible = true;
-            playercamera.Shake(0.2f,1);
+            //playercamera.Shake(0.5f,1);
 
             if (--playerHP <= 0)
             {
@@ -125,9 +125,9 @@ public class Player : MonoBehaviour
 
     IEnumerator DeathCoroutine()
     {
-        playercamera.colorAdjustments.saturation.Override(-100);
+        //playercamera.colorAdjustments.saturation.Override(-100);
         Time.timeScale = 0;
-        yield return new WaitForSecondsRealtime(0);
+        yield return new WaitForSecondsRealtime(1f);
         Destroy(gameObject);
         SceneManager.LoadScene("Death");
     }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] public GameObject player;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] float enemyHp = 3f;
+    public GameObject demon;
     
     public bool isTrackingPlayer = true;
     bool isInvincible;
@@ -62,8 +64,10 @@ public class Enemy : MonoBehaviour
             {
                 Instantiate(crystalPrefab, transform.position, Quaternion.identity);
                 Instantiate(coinPrefab, transform.position, Quaternion.identity);               
-                Destroy(gameObject);
-                enemiesKilled();
+                Destroy(gameObject);               
+                enemiesKilled();               
+                LoadScene();
+                
             }
             //enemy takes damage
             StartCoroutine(InvincibilityCoroutine());
@@ -134,5 +138,13 @@ public class Enemy : MonoBehaviour
             TitleManager.saveData.Boss++;
         }
 
+    }
+
+    public void LoadScene()
+    {
+        if(gameObject.tag == "Boss")
+        {          
+            SceneManager.LoadScene("Level2");
+        }
     }
 }

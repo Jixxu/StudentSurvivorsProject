@@ -31,20 +31,17 @@ public class Mushroom : Enemy
                 }
                 break;
             case MushroomState.Chasing:
-                if (Vector3.Distance(transform.position, player.transform.position) > 1f)
+                base.Update();
+                float distance = Vector3.Distance(transform.position, player.transform.position);
+                animator.SetBool("isWalking", true);
+                if (distance < 1f)
                 {
-                    animator.SetBool("isWalking", true);
-                    base.Update();
-                }
-                else
-                {
-                    animator.SetBool("isWalking", false);
                     currentState = MushroomState.Attacking;
                 }
                 break;
             case MushroomState.Attacking:
                 animator.SetTrigger("Attack");
-                waitTime = 5f;
+                waitTime = 1f;
                 currentState = MushroomState.Idling;
                 break;
         }

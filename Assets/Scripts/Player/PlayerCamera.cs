@@ -22,6 +22,7 @@ public class PlayerCamera : MonoBehaviour
    internal Vignette Vignette;
    internal DepthOfField DepthOfField;
    internal ColorAdjustments colorAdjustments;
+   internal Bloom bloom;
 
     private void Start()
     {
@@ -30,12 +31,13 @@ public class PlayerCamera : MonoBehaviour
         Volume.profile.TryGet(out Vignette);
         Volume.profile.TryGet(out DepthOfField);
         Volume.profile.TryGet(out colorAdjustments);
+        Volume.profile.TryGet(out bloom);
     }
 
     void LateUpdate()
     {
 
-        //Vignette.intensity.Override(1 - player.GetHPRatio());
+        PostProcessing();
         //Vector3 wantedPosition = target.position + offset;
         //Vector3 smoothedPosition = Vector3.Lerp(transform.position, wantedPosition, smoothSpeed);
         //transform.position = smoothedPosition + shakeOffset;
@@ -84,11 +86,11 @@ public class PlayerCamera : MonoBehaviour
     {
         Vector3 originalPosition = transform.position;
         float elapsed = 0f;
-        
-        while( elapsed < duration)
+
+        while (elapsed < duration)
         {
-            float x = Random.Range(-.5f,.5f) *magnitude;
-            float y = Random.Range(-.5f,.5f) *magnitude;
+            float x = Random.Range(-.5f, .5f) * magnitude;
+            float y = Random.Range(-.5f, .5f) * magnitude;
 
             shakeOffset.x = x;
             shakeOffset.y = y;
@@ -100,8 +102,11 @@ public class PlayerCamera : MonoBehaviour
 
     public void Shake(float duration, float magnitude)
     {
-        StartCoroutine(CameraShake( duration, magnitude));
+        StartCoroutine(CameraShake(duration, magnitude));
     }
 
-
+    public void PostProcessing()
+    {
+        Vignette.intensity.Override(1 - player.GetHPRatio());
+    }
 }

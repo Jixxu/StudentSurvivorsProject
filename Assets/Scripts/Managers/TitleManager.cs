@@ -7,10 +7,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering;
 
 public class TitleManager : MonoBehaviour
 {
     [SerializeField] Player player;
+    [SerializeField] PlayerCamera playerCamera;
 
     [SerializeField] Button healthIncreaseBTN;
 
@@ -20,9 +23,12 @@ public class TitleManager : MonoBehaviour
 
     [SerializeField] GameObject heroMenu;
 
+   
 
     public static SaveData saveData;
+
     string SavePath => Path.Combine(Application.persistentDataPath, "save.data");
+   
     public void Awake()
     {
         if (saveData == null)
@@ -74,25 +80,28 @@ public class TitleManager : MonoBehaviour
         }
     }
 
+
+    // Start Menu
     public void OnStartButtonClick()
     { 
         SceneManager.LoadScene("Game");
     }
-
     public void OnUpgradeButtonClick()
     {
         SceneManager.LoadScene("Upgrade");
     }
-
     public void WizardsBTN()
     {
         heroMenu.SetActive(true);
     }
-
     public void OnQuitButtonClick()
     {
         Application.Quit();
     }
+
+
+
+    //Death Scene
     public void OnRetryButtonClick()
     {
         StatReset();
@@ -103,10 +112,24 @@ public class TitleManager : MonoBehaviour
         StatReset();
         SceneManager.LoadScene("Title");
     }
+    public void StatReset()
+    {
+        TitleManager.saveData.merman = 0;
+        TitleManager.saveData.runner = 0;
+        TitleManager.saveData.zombie = 0;
+        TitleManager.saveData.vampire = 0;
+        TitleManager.saveData.giant = 0;
+        TitleManager.saveData.mushroom = 0;
+        TitleManager.saveData.goblin = 0;
+        TitleManager.saveData.skeleton = 0;
+        TitleManager.saveData.flyingEye = 0;
+        TitleManager.saveData.Boss = 0;
+        TitleManager.saveData.exp = 0;
+    }
 
     
 
-
+    //LevelUp Menu
     public void OnKatanaButtonClick()
     {
 
@@ -141,6 +164,10 @@ public class TitleManager : MonoBehaviour
         player.levelUpMenu.SetActive(false);
         Time.timeScale = 1;
     }
+
+
+
+    //Upgrade Scene
     public void HealthIncrease()
     {
         if (TitleManager.saveData.goldCoins < 25)
@@ -169,20 +196,9 @@ public class TitleManager : MonoBehaviour
     {
         SceneManager.LoadScene("Title");
     }
-
-    public void StatReset()
-    {
-        TitleManager.saveData.merman = 0;
-        TitleManager.saveData.runner = 0;
-        TitleManager.saveData.zombie = 0;
-        TitleManager.saveData.vampire = 0;
-        TitleManager.saveData.giant = 0;
-        TitleManager.saveData.mushroom = 0;
-        TitleManager.saveData.goblin = 0;
-        TitleManager.saveData.skeleton = 0;
-        TitleManager.saveData.flyingEye = 0;
-        TitleManager.saveData.Boss = 0;
-        TitleManager.saveData.exp = 0;
-    }
-
+    
+    //Option Menu
+    
+    
+    
 }
