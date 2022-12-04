@@ -6124,7 +6124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7451634807008844275, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19851,7 +19851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   player: {fileID: 1636871878}
-  scythe: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
+  snowBall: {fileID: 0}
   pool: {fileID: 0}
 --- !u!4 &560269288
 Transform:
@@ -20294,11 +20294,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &619492153 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2481680488219829907, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-  m_PrefabInstance: {fileID: 2143839001}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &627964639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22134,7 +22129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0319aa0c48ace0441a75f50659245ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scythePrefab: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
+  snowPrefab: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
 --- !u!4 &828910325
 Transform:
   m_ObjectHideFlags: 0
@@ -28960,7 +28955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   player: {fileID: 1636871878}
-  scythe: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
+  snowBall: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
   pool: {fileID: 828910324}
 --- !u!1001 &1546739995
 PrefabInstance:
@@ -38974,7 +38969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   player: {fileID: 1636871878}
-  scythe: {fileID: 658298513973895897, guid: 1e0949ea9ea64a24ea4ffa092835006b, type: 3}
+  snowBall: {fileID: 0}
   pool: {fileID: 0}
 --- !u!4 &1590083688
 Transform:
@@ -43641,80 +43636,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6970473211281433168, guid: 8284728e424c60349ab4ddb3abf4eb63, type: 3}
   m_PrefabInstance: {fileID: 682431897}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2143839001
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2234300328223717978, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2481680488219829907, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_Name
-      value: DemonBoss
-      objectReference: {fileID: 0}
-    - target: {fileID: 3367389492534974576, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: demon
-      value: 
-      objectReference: {fileID: 619492153}
-    - target: {fileID: 3367389492534974576, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3367389492534974576, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: enemyHp
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3539264302206863900, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 858078ca6ff5b8243b8b22d7a313f28f, type: 2}
-    - target: {fileID: 5101849517611241917, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}
-      propertyPath: m_SortingOrder
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a7f3dc5de06e413449fbeee46d9e3ef2, type: 3}

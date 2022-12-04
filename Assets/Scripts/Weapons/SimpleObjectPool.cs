@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class SimpleObjectPool : MonoBehaviour
 {
-    [SerializeField] GameObject scythePrefab;
+    [SerializeField] GameObject snowPrefab;
   
     List<GameObject> pooledObjects = new List<GameObject>();
     int objectIndex;
 
     private void Awake()
     {
-        for (int i = 0; i < 1000; i++)
+        for (int i = 0; i < 100; i++)
         {
-            pooledObjects.Add(Instantiate(scythePrefab));
+            pooledObjects.Add(Instantiate(snowPrefab));
             
         }
     }
