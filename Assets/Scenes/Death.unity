@@ -2025,6 +2025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7451634807008844273, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
+  playerCamera: {fileID: 0}
   healthIncreaseBTN: {fileID: 0}
   CritIncreaseBTN: {fileID: 0}
   ps: {fileID: 0}

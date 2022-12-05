@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering;
+using TMPro;
 
 public class TitleManager : MonoBehaviour
 {
@@ -23,14 +24,16 @@ public class TitleManager : MonoBehaviour
 
     [SerializeField] GameObject heroMenu;
 
-   
+    [SerializeField] TMP_Text goldCoins;
+
+
 
     public static SaveData saveData;
 
     string SavePath => Path.Combine(Application.persistentDataPath, "save.data");
    
     public void Awake()
-    {
+    {       
         if (saveData == null)
             Load();
         else
@@ -78,6 +81,11 @@ public class TitleManager : MonoBehaviour
             if (file != null)
                 file.Close();
         }
+    }
+
+    public void Update()
+    {
+        goldCoins.text = TitleManager.saveData.goldCoins.ToString();
     }
 
 
