@@ -117,36 +117,37 @@ public class GameManager : MonoBehaviour
                 yield return new WaitForSeconds(10f);
                 SpawnEnemies(merman, 15);
                 SpawnEnemies(zombie, 7);
+                SpawnEnemies(Giant, 5);
                 yield return new WaitForSeconds(20f);
                 SpawnEnemies(merman, 15);
                 SpawnEnemies(vampire, 10);
                 yield return new WaitForSeconds(20f);
                 SpawnEnemies(merman, 15);
                 SpawnEnemies(zombie, 10);
-                yield return new WaitForSeconds(20f);
-                SpawnEnemies(zombie, 15);
-                SpawnEnemies(vampire, 10);
-                yield return new WaitForSeconds(20f);
-                SpawnEnemies(zombie, 30);
-                SpawnEnemies(runner, 7, false);
-                yield return new WaitForSeconds(20f);
-                SpawnEnemies(vampire, 40);
-                SpawnEnemies(runner, 10, false);
-                SpawnEnemies(merman, 30);
-                yield return new WaitForSeconds(30f);
-                SpawnEnemies(merman, 30);
-                SpawnEnemies(zombie, 20);
-                SpawnEnemies(vampire, 20);
-                yield return new WaitForSeconds(30f);
-                SpawnEnemies(merman, 50);
-                SpawnEnemies(vampire, 40);
-                yield return new WaitForSeconds(40f);
-                SpawnEnemies(vampire, 50);
-                SpawnEnemies(zombie, 40);
-                yield return new WaitForSeconds(40f);
-                SpawnEnemies(zombie, 50);
-                SpawnEnemies(merman, 50);
-                SpawnEnemies(vampire, 50);
+                //yield return new WaitForSeconds(20f);
+                //SpawnEnemies(zombie, 15);
+                //SpawnEnemies(vampire, 10);
+                //yield return new WaitForSeconds(20f);
+                //SpawnEnemies(zombie, 30);
+                //SpawnEnemies(runner, 7, false);
+                //yield return new WaitForSeconds(20f);
+                //SpawnEnemies(vampire, 40);
+                //SpawnEnemies(runner, 10, false);
+                //SpawnEnemies(merman, 30);
+                //yield return new WaitForSeconds(30f);
+                //SpawnEnemies(merman, 30);
+                //SpawnEnemies(zombie, 20);
+                //SpawnEnemies(vampire, 20);
+                //yield return new WaitForSeconds(30f);
+                //SpawnEnemies(merman, 50);
+                //SpawnEnemies(vampire, 40);
+                //yield return new WaitForSeconds(40f);
+                //SpawnEnemies(vampire, 50);
+                //SpawnEnemies(zombie, 40);
+                //yield return new WaitForSeconds(40f);
+                //SpawnEnemies(zombie, 50);
+                //SpawnEnemies(merman, 50);
+                //SpawnEnemies(vampire, 50);
                 yield return new WaitForSeconds(25f);
 
 
@@ -161,6 +162,19 @@ public class GameManager : MonoBehaviour
                 SpawnEnemies(Skeleton, 2);
                 SpawnEnemies(Mushroom, 2);
                 yield return new WaitForSeconds(10f);
+                SpawnEnemies(Goblin, 10);
+                yield return new WaitForSeconds(10f);
+                SpawnEnemies(Skeleton, 3);
+                yield return new WaitForSeconds(10f);
+                SpawnEnemies(Mushroom, 15);
+                SpawnEnemies(Goblin, 7);
+                SpawnEnemies(Skeleton, 5);
+                yield return new WaitForSeconds(20f);
+                SpawnEnemies(Mushroom, 15);
+                SpawnEnemies(Skeleton, 10);
+                yield return new WaitForSeconds(20f);
+                SpawnEnemies(Skeleton, 15);
+                SpawnEnemies(Goblin, 10);
             }
         }
 
@@ -191,7 +205,7 @@ public class GameManager : MonoBehaviour
             {
                 for (int i = 0; i < numberOfBosses; i++)
                 {
-                    yield return new WaitForSeconds(300f);
+                    yield return new WaitForSeconds(75f);
                     Vector3 bossSpawn = Random.insideUnitCircle.normalized * 10;
                     bossSpawn += player.transform.position;
                     GameObject enemyobject = Instantiate(bossEnemy, bossSpawn, Quaternion.identity);
@@ -209,7 +223,7 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < numberOfBosses; i++)
             {
-                yield return new WaitForSeconds(300f);
+                yield return new WaitForSeconds(75f);
                 Vector3 bossSpawn = Random.insideUnitCircle.normalized * 10;
                 bossSpawn += player.transform.position;
                 GameObject enemyobject = Instantiate(bossEnemy, bossSpawn, Quaternion.identity);
