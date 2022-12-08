@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Player2;
     [SerializeField] GameObject Player3;
 
-    
+    internal Volume volume;
 
     private void Awake()
     {
@@ -52,6 +53,8 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        volume = Camera.main.GetComponent<Volume>();
+        volume.enabled = PostProcessingManager.postProcessing;
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 

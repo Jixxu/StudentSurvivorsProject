@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.UI;
 
 public class PostProcessingManager : MonoBehaviour
 {
-    [SerializeField] private PostProcessVolume postProcessVolume;
-    private Bloom bloom;
-    private Vignette vignette;
-
+    
+    public static bool postProcessing = true;
+    [SerializeField] Toggle toggle;
+    
     private void Start()
     {
-        postProcessVolume.profile.TryGetSettings(out bloom);
-
+        toggle.isOn = postProcessing;    
     }
 
-    public void BloomOnOff(bool value)
+    public void PostOnOff(bool value)
     {
-        bloom.active = value;
+        postProcessing = toggle.isOn;
     }
+
+
 }
+
