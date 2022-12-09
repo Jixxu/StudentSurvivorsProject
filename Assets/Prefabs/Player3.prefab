@@ -106,10 +106,10 @@ MonoBehaviour:
   weapons: []
   goldDisplay: {fileID: 0}
   playercamera: {fileID: 0}
-  speed: 7
-  BaseSpeed: 7
-  playerHP: 0
-  MaxplayerHP: 0
+  speed: 5
+  BaseSpeed: 5
+  playerHP: 15
+  MaxplayerHP: 15
   CurrentMaxPlayerHP: 0
   SmallHP: 2
   BigHP: 5

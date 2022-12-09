@@ -107,10 +107,10 @@ MonoBehaviour:
   - {fileID: 0}
   goldDisplay: {fileID: 0}
   playercamera: {fileID: 0}
-  speed: 7
-  BaseSpeed: 7
-  playerHP: 0
-  MaxplayerHP: 0
+  speed: 9
+  BaseSpeed: 9
+  playerHP: 7
+  MaxplayerHP: 7
   CurrentMaxPlayerHP: 0
   SmallHP: 2
   BigHP: 5
