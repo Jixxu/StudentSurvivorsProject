@@ -14218,7 +14218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1494416096842236047, guid: 64ae21c6274275542be07673ccc55704, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1494416096842236047, guid: 64ae21c6274275542be07673ccc55704, type: 3}
       propertyPath: m_TagString
@@ -24861,6 +24861,7 @@ MonoBehaviour:
   CritIncreaseBTN: {fileID: 0}
   ps: {fileID: 1419745732}
   heroMenu: {fileID: 0}
+  goldCoins: {fileID: 0}
 --- !u!4 &2052670922
 Transform:
   m_ObjectHideFlags: 0
