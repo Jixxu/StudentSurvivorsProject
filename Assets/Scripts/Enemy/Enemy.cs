@@ -8,12 +8,14 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject crystalPrefab;
     [SerializeField] GameObject coinPrefab;
+    [SerializeField] SimpleObjectPool pool;
     [SerializeField] float speed = 1f;
     [SerializeField] public GameObject player;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] float enemyHp = 3f;
     public GameObject demon;
-    
+    Material material;
+
     public bool isTrackingPlayer = true;
     bool isInvincible;
 
@@ -25,8 +27,8 @@ public class Enemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         Originalcolor = GetComponent<SpriteRenderer>().color;
-        
-        
+        material = spriteRenderer.material;
+
     }
 
    
@@ -51,7 +53,9 @@ public class Enemy : MonoBehaviour
     {
         isInvincible = true;
         spriteRenderer.color = Color.red;
+        material.SetFloat("_Flash", 0.33f);
         yield return new WaitForSeconds(1f);
+        material.SetFloat("_Flash", 0f);
         spriteRenderer.color = Originalcolor;
         isInvincible = false;
     }
@@ -63,7 +67,7 @@ public class Enemy : MonoBehaviour
             if (enemyHp <= 0)
             {
                 Instantiate(crystalPrefab, transform.position, Quaternion.identity);
-                Instantiate(coinPrefab, transform.position, Quaternion.identity);               
+                Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);               
                 enemiesKilled();               
                 LoadScene();
@@ -147,4 +151,6 @@ public class Enemy : MonoBehaviour
             SceneManager.LoadScene("Level2");
         }
     }
+
+    
 }

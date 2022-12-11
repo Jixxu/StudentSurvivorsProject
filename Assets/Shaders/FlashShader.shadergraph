@@ -122,8 +122,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 401.99993896484377,
-            "y": -1.000007152557373
+            "x": 105.0,
+            "y": -1.0
         },
         "m_Blocks": [
             {
@@ -139,8 +139,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 401.99993896484377,
-            "y": 219.0
+            "x": 105.0,
+            "y": 219.00001525878907
         },
         "m_Blocks": [
             {
@@ -240,9 +240,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -121.00001525878906,
-            "y": 139.99998474121095,
-            "width": 102.99998474121094,
+            "x": -439.0,
+            "y": 202.0,
+            "width": 103.0,
             "height": 34.0
         }
     },
@@ -367,7 +367,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"7566f266a998ad2418a34284851c4a02\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"4a0c2a36d5484524a9cb3cfcd0283e08\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -485,9 +485,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -354.0,
-            "y": 39.0,
-            "width": 207.99998474121095,
+            "x": -767.0,
+            "y": 66.0,
+            "width": 208.0,
             "height": 435.0
         }
     },
@@ -750,8 +750,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -511.0000305175781,
-            "y": 34.00000762939453,
+            "x": -912.0,
+            "y": 106.0,
             "width": 129.0,
             "height": 34.0
         }
@@ -812,10 +812,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 8.999979972839356,
-            "y": 38.99999237060547,
-            "width": 130.00003051757813,
-            "height": 118.00000762939453
+            "x": -264.0,
+            "y": 140.0,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -835,7 +835,7 @@
         "plus"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []

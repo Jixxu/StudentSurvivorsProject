@@ -5,15 +5,17 @@ using UnityEngine;
 public class SimpleObjectPool : MonoBehaviour
 {
     [SerializeField] GameObject snowPrefab;
+    
   
     List<GameObject> pooledObjects = new List<GameObject>();
     int objectIndex;
 
     private void Awake()
     {
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 300; i++)
         {
             pooledObjects.Add(Instantiate(snowPrefab));
+            
             
         }
     }

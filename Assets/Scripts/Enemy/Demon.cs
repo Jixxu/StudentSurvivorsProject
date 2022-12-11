@@ -48,4 +48,9 @@ public class Demon : Enemy
                 break;
         }
     }
+
+    internal void boxCollider(Collider2D other)
+    {
+        this.enabled = true;
+    }
 }

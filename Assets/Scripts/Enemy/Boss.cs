@@ -12,6 +12,7 @@ public class Boss : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] float enemyHp = 50f;
     [SerializeField] bool isBoss;
+    Material material;
 
 
 
@@ -24,6 +25,7 @@ public class Boss : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         Originalcolor = GetComponent<SpriteRenderer>().color;
+        material = spriteRenderer.material;
         if (isBoss)
         {
             StartCoroutine(BossCameraCoroutine());
@@ -61,10 +63,12 @@ public class Boss : MonoBehaviour
 
     IEnumerator DamageCoroutine()
     {
-        
-        spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(1f);
-        spriteRenderer.color = Originalcolor;
+        //spriteRenderer.color = Color.red;
+        //yield return new WaitForSeconds(1f);
+        //spriteRenderer.color = Originalcolor;
+        material.SetFloat("_Flash", 0.33f);
+        yield return new WaitForSeconds(0.5f);
+        material.SetFloat("_Flash", 0);
         
     }
     internal IEnumerator Damage(int damage)
