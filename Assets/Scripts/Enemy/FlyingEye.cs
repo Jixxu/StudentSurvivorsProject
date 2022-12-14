@@ -10,7 +10,8 @@ public class FlyingEye : Enemy
     {
         Idling,
         Chasing,
-        Attacking
+        Attacking,
+        Death
     }
     [SerializeField] GameObject ballPrefab;
     FlyingState currentState = FlyingState.Idling;
@@ -43,12 +44,22 @@ public class FlyingEye : Enemy
                     animator.SetBool("isWalking", false);
                     currentState = FlyingState.Attacking;
                 }
+                if (enemyHp <= 0)
+                {
+                    currentState = FlyingState.Death;
+                }
                 break;
             case FlyingState.Attacking:
                 animator.SetTrigger("Attack");
                 waitTime = 1f;
                 currentState = FlyingState.Idling;
                 SpawnBall();
+                break;
+            case FlyingState.Death:
+                animator.SetBool("isWalking", false);
+                StartCoroutine(BossDeath());
+                currentState = FlyingState.Idling;
+                waitTime = 2f;
                 break;
         }
     }
@@ -66,5 +77,39 @@ public class FlyingEye : Enemy
         float angle = MathF.Atan2(points.y, points.x) * Mathf.Rad2Deg;
 
         Instantiate(ballPrefab, transform.position, Quaternion.Euler(0, 0, angle));
+    }
+
+    IEnumerator BossDeath()
+    {
+        animator.SetTrigger("Death");
+        yield return new WaitForSecondsRealtime(0.8f);
+        Destroy(gameObject);
+    }
+    IEnumerator InvincibilityCoroutine()
+    {
+        isInvincible = true;
+        spriteRenderer.color = Color.red;
+        material.SetFloat("_Flash", 0.33f);
+        yield return new WaitForSeconds(1f);
+        material.SetFloat("_Flash", 0f);
+        spriteRenderer.color = Originalcolor;
+        isInvincible = false;
+    }
+    public override void Damage(int damage)
+    {
+        if (!isInvincible)
+        {
+            enemyHp = enemyHp - damage;
+            if (enemyHp <= 0)
+            {
+                Instantiate(crystalPrefab, transform.position, Quaternion.identity);
+                Instantiate(coinPrefab, transform.position, Quaternion.identity);
+
+
+            }
+            //enemy takes damage
+            StartCoroutine(InvincibilityCoroutine());
+        }
+
     }
 }

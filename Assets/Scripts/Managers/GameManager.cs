@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        int seconds = (int)Time.time;
+        int seconds = (int)Time.timeSinceLevelLoad;
 
         timerText.text = seconds.ToString();
         int minutes = seconds / 60;
@@ -224,7 +224,7 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < numberOfBosses; i++)
             {
-                yield return new WaitForSeconds(300);
+                yield return new WaitForSeconds(300f);
                 Vector3 bossSpawn = Random.insideUnitCircle.normalized * 10;
                 bossSpawn += player.transform.position;
                 GameObject enemyobject = Instantiate(bossEnemy, bossSpawn, Quaternion.identity);

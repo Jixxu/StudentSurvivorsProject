@@ -11,13 +11,22 @@ public class PlayerHPBar : MonoBehaviour
     {
         if (player != null)
         {
+            if (HeroManger.playerIndex == 1)
+            {
+                float hpRatio = (float)player.playerHP / player.MaxplayerHP;
+                Foreground.transform.localScale = new Vector3(hpRatio, 1, 1);
+            }
+            else if (HeroManger.playerIndex == 2)
+            {
+                float hpRatio = (float)player.playerHP / player.MaxplayerHP;
+                Foreground.transform.localScale = new Vector3(hpRatio, 1, 1);
+            }
+            else if (HeroManger.playerIndex == 3)
+            {
+                float hpRatio = (float)player.playerHP / player.MaxplayerHP;
+                Foreground.transform.localScale = new Vector3(hpRatio, 1, 1);
+            }
 
-            //track player
-            //transform.position = player.transform.position + new Vector3(0, 0.75f, 0);
-
-            //make hp bar go down as health goes down
-            float hpRatio = (float)player.playerHP / player.MaxplayerHP;
-            Foreground.transform.localScale = new Vector3(hpRatio, 1, 1);
         }
 
     }

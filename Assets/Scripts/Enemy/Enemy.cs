@@ -6,21 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] GameObject crystalPrefab;
-    [SerializeField] GameObject coinPrefab;
-    [SerializeField] SimpleObjectPool pool;
-    [SerializeField] float speed = 1f;
+    [SerializeField] public GameObject crystalPrefab;
+    [SerializeField] public GameObject coinPrefab;
+    [SerializeField] public SimpleObjectPool pool;
+    [SerializeField] public float speed = 1f;
     [SerializeField] public GameObject player;
-    [SerializeField] SpriteRenderer spriteRenderer;
-    [SerializeField] float enemyHp = 3f;
+    [SerializeField] public SpriteRenderer spriteRenderer;
+    [SerializeField] public float enemyHp = 3f;
     public GameObject demon;
-    Material material;
+    public Material material;
 
     public bool isTrackingPlayer = true;
-    bool isInvincible;
+    public bool isInvincible;
 
 
-    Color Originalcolor;
+    public Color Originalcolor;
     
 
     protected virtual void Start()
@@ -36,14 +36,20 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Player player = collision.GetComponent<Player>();
+        Player2 player2 = collision.GetComponent<Player2>();
+        Player3 player3 = collision.GetComponent<Player3>();
         if (player)
         {
-
-
-            if (player.ONdamage())
-            {
-                
-            }
+            player.ONdamage();
+          
+        }
+        if (player2)
+        {
+            player2.ONdamage();
+        }
+        if (player3)
+        {
+            player3.ONdamage();
         }
 
 
@@ -59,7 +65,7 @@ public class Enemy : MonoBehaviour
         spriteRenderer.color = Originalcolor;
         isInvincible = false;
     }
-    internal void Damage(int damage)
+    public virtual void Damage(int damage)
     {
         if (!isInvincible)
         {

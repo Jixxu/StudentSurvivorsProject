@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     //health
     public int playerHP;
     public int MaxplayerHP;
-    public int CurrentMaxPlayerHP;
+    public int CurrentHP;
 
     //Heals
     public int SmallHP = 2;
@@ -129,6 +129,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(1f);
         Destroy(gameObject);
+        Time.timeScale = 1;
         SceneManager.LoadScene("Death");
     }
 

@@ -9,9 +9,10 @@ public class Demon : Enemy
     {
         Idling,
         Chasing,
-        Attacking
+        Attacking,
+        Death
     }
-
+    [SerializeField] public GameObject attackbox;
     DemonState currentState = DemonState.Idling;
     Animator animator;
     float waitTime = 2f;
@@ -35,22 +36,72 @@ public class Demon : Enemy
                 base.Update();
                 float distance = Vector3.Distance(transform.position, player.transform.position);
                 animator.SetBool("isWalking", true);
-                if (distance < 1f)
+                if (distance < 3f)
                 {
                     currentState = DemonState.Attacking;
+                }
+                if (enemyHp <= 0)
+                {
+                    currentState = DemonState.Death;
                 }
                 break;
                 
             case DemonState.Attacking:
-                animator.SetTrigger("Attack");
-                waitTime = 1f;
-                currentState = DemonState.Idling;
+                animator.SetBool("isWalking", false);
+                StartCoroutine(BossAttack());
+                currentState = DemonState.Idling;           
+                waitTime = 2f;
                 break;
+            case DemonState.Death:
+                animator.SetBool("isWalking", false);
+                StartCoroutine(BossDeath());
+                currentState = DemonState.Idling;
+                waitTime = 2f;
+                break;
+
         }
     }
 
-    internal void boxCollider(Collider2D other)
+    IEnumerator BossAttack()
     {
-        this.enabled = true;
+        animator.SetTrigger("Attack");
+        yield return new WaitForSecondsRealtime(0.75f);
+        attackbox.SetActive(true);
+        yield return new WaitForSecondsRealtime(0.5f);
+        attackbox.SetActive(false);
+    }
+
+    IEnumerator BossDeath()
+    {
+        animator.SetTrigger("Death");
+        yield return new WaitForSecondsRealtime(0.8f);
+        Destroy(gameObject);
+    }
+    IEnumerator InvincibilityCoroutine()
+    {
+        isInvincible = true;
+        spriteRenderer.color = Color.red;
+        material.SetFloat("_Flash", 0.33f);
+        yield return new WaitForSeconds(1f);
+        material.SetFloat("_Flash", 0f);
+        spriteRenderer.color = Originalcolor;
+        isInvincible = false;
+    }
+    public override void Damage(int damage)
+    {
+        if (!isInvincible)
+        {
+            enemyHp = enemyHp - damage;
+            if (enemyHp <= 0)
+            {
+                Instantiate(crystalPrefab, transform.position, Quaternion.identity);
+                Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                
+
+            }
+            //enemy takes damage
+            StartCoroutine(InvincibilityCoroutine());
+        }
+
     }
 }

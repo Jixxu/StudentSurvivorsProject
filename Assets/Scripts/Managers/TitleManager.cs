@@ -38,6 +38,7 @@ public class TitleManager : MonoBehaviour
             Load();
         else
             Save();
+        //goldCoins.text = saveData.goldCoins.ToString();
     }
 
     private void Load()
@@ -85,7 +86,6 @@ public class TitleManager : MonoBehaviour
 
     public void Update()
     {
-        goldCoins.text = TitleManager.saveData.goldCoins.ToString();
     }
 
 
@@ -142,35 +142,30 @@ public class TitleManager : MonoBehaviour
     {
 
         player.weapons[0].LevelUp();
-        player.levelUpMenu.SetActive(false);
-        Time.timeScale = 1;
+        LevelUpAndPlay();
 
     }
     public void OnScytheButtonClick()
     {
         player.weapons[1].LevelUp();
-        player.levelUpMenu.SetActive(false);
-        Time.timeScale = 1;
+        LevelUpAndPlay();
     }
     public void OnEnergyButtonClick()
     {
         player.weapons[2].LevelUp();
-        player.levelUpMenu.SetActive(false);
-        Time.timeScale = 1;
+        LevelUpAndPlay();
     }
     public void HPBuffLVL()
     {
         player.weapons[3].LevelUp();
-        player.levelUpMenu.SetActive(false);
-        Time.timeScale = 1;
+        LevelUpAndPlay();
         ps.Play();
 
     }
     public void SpeedBuffLVL()
     {
         player.weapons[4].LevelUp();
-        player.levelUpMenu.SetActive(false);
-        Time.timeScale = 1;
+        LevelUpAndPlay();
     }
 
 
@@ -207,6 +202,11 @@ public class TitleManager : MonoBehaviour
     
     //Option Menu
     
-    
+    void LevelUpAndPlay()
+    {
+        player.levelUpMenu.SetActive(false);
+        Time.timeScale = 1;
+        
+    }
     
 }

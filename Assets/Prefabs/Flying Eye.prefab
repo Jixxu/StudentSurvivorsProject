@@ -124,12 +124,15 @@ MonoBehaviour:
   crystalPrefab: {fileID: 5973798920921161896, guid: 3e5f3898fce420d4da50fd38bcd8697b, type: 3}
   coinPrefab: {fileID: 5216522861631752693, guid: 40d565dd9e4c7184882f8b636bce0bed, type: 3}
   pool: {fileID: 0}
-  speed: 1
+  speed: 7
   player: {fileID: 7451634807008844274, guid: b5fe7918caa078d4baaa670ded417be7, type: 3}
   spriteRenderer: {fileID: 7668887331125785899}
   enemyHp: 500
   demon: {fileID: 0}
+  material: {fileID: 0}
   isTrackingPlayer: 1
+  isInvincible: 0
+  Originalcolor: {r: 0, g: 0, b: 0, a: 0}
   ballPrefab: {fileID: 5184764313807594574, guid: 0093abd3326faf246ba7b683bd85d254, type: 3}
 --- !u!212 &7668887331125785899 stripped
 SpriteRenderer:

@@ -10,8 +10,21 @@ public class EXPbar : MonoBehaviour
 
     private void Update()
     {
-        float expRatio = (float)player.currentExp / player.expTolevel;
-
-        foreground.transform.localScale = new Vector3(expRatio, 1, 1);
+        if (HeroManger.playerIndex == 1)
+        {
+            float expRatio = (float)player.currentExp / player.expTolevel;
+            foreground.transform.localScale = new Vector3(expRatio, 1, 1);
+        }
+        else if (HeroManger.playerIndex == 2)
+        {
+            float expRatio = (float)player.currentExp / player.expTolevel;
+            foreground.transform.localScale = new Vector3(expRatio, 1, 1);
+        }
+        else if (HeroManger.playerIndex == 3)
+        {
+            float expRatio = (float)player.currentExp / player.expTolevel;
+            foreground.transform.localScale = new Vector3(expRatio, 1, 1);
+        }
+            
     }
 }

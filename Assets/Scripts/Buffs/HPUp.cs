@@ -4,12 +4,25 @@ using UnityEngine;
 
 public class HPUp : BaseWeapons
 {
+    [SerializeField] Player2 player2;
+    [SerializeField] Player3 player3;
     
-    public void HPup()
+    public void Update()
     {
-        if (level >= 1)
+        if (level > 0)
         {
-            player.MaxplayerHP = player.CurrentMaxPlayerHP + (level * 2);
+            if (HeroManger.playerIndex == 1)
+            {
+                player.MaxplayerHP = player.CurrentHP + (level * 2);
+            }
+            else if (HeroManger.playerIndex == 2)
+            {
+                player.MaxplayerHP = player.CurrentHP + (level * 2);
+            }
+            else if (HeroManger.playerIndex == 3)
+            {
+                player3.MaxplayerHP = player3.CurrentHP + (level * 2);
+            }
         }
     }
 }

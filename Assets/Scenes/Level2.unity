@@ -170,6 +170,7 @@ MonoBehaviour:
   Player1: {fileID: 1713442124}
   Player2: {fileID: 1806812110}
   Player3: {fileID: 1970741305}
+  pool: {fileID: 0}
 --- !u!4 &33585528
 Transform:
   m_ObjectHideFlags: 0
@@ -869,6 +870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   player: {fileID: 1713442123}
+  player2: {fileID: 0}
+  player3: {fileID: 0}
 --- !u!1 &666000080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,6 +3020,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   player: {fileID: 1713442123}
+  player2: {fileID: 0}
+  player3: {fileID: 0}
 --- !u!1 &1419745731
 GameObject:
   m_ObjectHideFlags: 0
@@ -24632,6 +24637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   player: {fileID: 1713442123}
+  player2: {fileID: 0}
+  player3: {fileID: 0}
 --- !u!1 &1986283382
 GameObject:
   m_ObjectHideFlags: 0
